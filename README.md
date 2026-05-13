@@ -3,6 +3,7 @@
 Aplicación web para **resumir documentos PDF y texto** utilizando modelos locales a través de **Ollama** y un backend construido con **FastAPI**.  
 Incluye una interfaz moderna desarrollada con **Astro**, subida de archivos mediante **drag & drop**, vista previa del resumen y un modal para lectura cómoda.
 
+<img width="649" height="354" alt="image" src="https://github.com/user-attachments/assets/def6a1e8-727b-4498-92d6-65d1f3428aa7" />
 ---
 
 ## Características principales
@@ -122,8 +123,11 @@ http://localhost:4321
 
 ---
 
-## Captura 
+## Capturas 
 
+<img width="649" height="354" alt="image" src="https://github.com/user-attachments/assets/663053df-68cf-4c84-8a0c-1f47b255132f" />
+
+<img width="732" height="758" alt="image" src="https://github.com/user-attachments/assets/fc62ff0f-9ab7-434b-97dd-6ca89d43049a" />
 
 
 ---
