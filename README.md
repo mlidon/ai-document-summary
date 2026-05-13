@@ -78,7 +78,7 @@ curl -fsSL https://ollama.com/install.sh | sh
 Descargar el modelo:
 
 ```bash
-ollama pull llama3
+ollama pull llama3.1:8b 
 ```
 
 ---
