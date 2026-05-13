@@ -1,0 +1,94 @@
+<div class="page-container">
+  <div class="grid-layout">
+
+    <!-- Upload Panel -->
+    <section class="panel upload-panel">
+      <div class="panel-gradient"></div>
+
+      <div class="panel-content">
+        <div class="panel-header">
+          <span class="tag tag-cyan">Inteligencia documental</span>
+
+          <h1>Arrastra cualquier documento y obtén un resumen inteligente</h1>
+
+          <p class="description">
+            Compatible con archivos PDF, Word, Excel y TXT. El sistema analiza el contenido y genera automáticamente un resumen estructurado y fácil de leer.
+          </p>
+        </div>
+
+        <div class="dropzone" id="dropzone">
+          <div class="dropzone-gradient"></div>
+
+          <div class="dropzone-content">
+            <div class="file-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none">
+                <path
+                    stroke="#D5D7DA"
+                    stroke-width="1.5"
+                    d="M4.75 4A3.25 3.25 0 0 1 8 .75h16c.121 0 .238.048.323.134l10.793 10.793a.46.46 0 0 1 .134.323v24A3.25 3.25 0 0 1 32 39.25H8A3.25 3.25 0 0 1 4.75 36z"
+                />
+                <path stroke="#D5D7DA" stroke-width="1.5" d="M24 .5V8a4 4 0 0 0 4 4h7.5" />
+                <path
+                    stroke="#155EEF"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M11.9 19.5h16.2m-16.2 3.6h16.2m-16.2 3.6h16.2m-16.2 3.6h12.6"
+                />
+            </svg>
+          </div>
+
+            <h2>Arrastra tu archivo aquí</h2>
+            <p class="description">Suelta un documento o haz clic para seleccionar un archivo desde tu dispositivo.</p>
+
+            <button id="selectBtn" class="btn-primary">Seleccionar archivo</button>
+            <input id="fileInput" type="file" hidden />
+
+            <div class="file-types">
+              <span>PDF</span>
+              <span>DOCX</span>
+              <span>XLSX</span>
+              <span>TXT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Summary Panel -->
+    <section class="panel summary-panel">
+      <div class="panel-gradient-alt"></div>
+
+      <div class="panel-content">
+        <div class="summary-header">
+          <div>
+            <span class="tag tag-fuchsia">Resultado generado</span>
+            <h2>Resumen automático</h2>
+          </div>
+
+          <div class="status-indicator">
+            <span class="pulse"></span>
+            IA activa
+          </div>
+        </div>
+
+        <div class="summary-box" id="summaryBox">
+          <p class="placeholder">Aquí aparecerá el resumen generado…</p>
+        </div>
+
+        <div class="actions">
+          <button class="btn-primary" id="downloadBtn">Descargar resumen</button>
+          <button class="btn-secondary" id="viewBtn">Ver documento completo</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+    <div id="modalViewer" class="modal hidden">
+      <div class="modal-content">
+        <button id="closeModal" class="modal-close">✕</button>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+</div>
